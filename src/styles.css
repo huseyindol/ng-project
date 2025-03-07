@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "tailwindcss-primeui";
+@import "primeicons/primeicons.css";
+
 
 /* This line creates a custom dark theme variant
    It applies styles to elements with class 'my-app-dark' 
