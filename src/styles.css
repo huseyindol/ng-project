@@ -1,4 +1,12 @@
 @import "tailwindcss";
+@import "tailwindcss-primeui";
+
+/* This line creates a custom dark theme variant
+   It applies styles to elements with class 'my-app-dark' 
+   and all their children (*) using the :where selector.
+   Used for implementing dark mode in the application. */
+@custom-variant dark (&:where(.my-app-dark, .my-app-dark *));
+
 * {
-  font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
