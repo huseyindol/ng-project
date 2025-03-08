@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 import { HeaderComponent } from './header/header.component';
 @Component({
 	selector: 'app-root',
@@ -9,4 +10,7 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
 	title = 'first-project';
+	ngOnInit() {
+		injectSpeedInsights();
+	}
 }
