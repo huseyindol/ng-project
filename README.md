@@ -1,59 +1,85 @@
-# FirstProject
+# Hüseyin DOL - Portfolio Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+A modern portfolio website built with Angular 19 and Tailwind CSS.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Responsive design that works on all devices
+- Dark mode support
+- Modern UI with smooth animations
+- Fast loading times
+- SEO optimized
+- Contact form with validation
+- Blog section
+- Projects showcase
+
+## Technologies Used
+
+- Angular 19
+- Tailwind CSS 4
+- PrimeNG 19
+- TypeScript
+- Vercel Analytics
+- Vercel Speed Insights
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or bun package manager
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/huseyindol/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   # or
+   bun start
+   ```
+
+4. Open your browser and navigate to `http://localhost:4200`
+
+## Building for Production
 
 ```bash
-ng serve
+npm run build
+# or
+bun run build
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The build artifacts will be stored in the `dist/` directory.
 
-## Code scaffolding
+## Deployment
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This project is configured for easy deployment to Vercel. Simply connect your GitHub repository to Vercel and it will automatically deploy your application.
 
-```bash
-ng generate component component-name
-```
+## Project Structure
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- `src/app/pages/` - Contains all the page components
+- `src/app/header/` - Header component
+- `src/app/footer/` - Footer component
+- `public/assets/` - Static assets like images
 
-```bash
-ng generate --help
-```
+## Contact
 
-## Building
+- Email: huseyindol@gmail.com
+- GitHub: [github.com/huseyindol](https://github.com/huseyindol)
+- LinkedIn: [linkedin.com/in/hüseyin-dol-5827673a](https://www.linkedin.com/in/h%C3%BCseyin-dol-5827673a/)
 
-To build the project run:
+## License
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License - see the LICENSE file for details.

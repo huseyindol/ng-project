@@ -1,1 +1,46 @@
-<p>footer works!</p>
+<footer class="bg-primary-800 dark:bg-primary-950 text-white py-8">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Hüseyin DOL</h3>
+        <p class="mb-4">Full Stack Developer specializing in modern web technologies and solutions.</p>
+        <div class="flex gap-4">
+          @for (link of socialLinks; track link.name) {
+            <a [href]="link.url" target="_blank" class="text-white hover:text-primary-300 transition-colors">
+              <i class="pi {{link.icon}} text-xl"></i>
+            </a>
+          }
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          @for (link of quickLinks; track link.name) {
+            <li>
+              <a [routerLink]="[link.url]" class="hover:text-primary-300 transition-colors">{{link.name}}</a>
+            </li>
+          }
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <i class="pi pi-envelope"></i>
+            <a href="mailto:huseyindol@gmail.com">huseyindol&#64;gmail.com</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-phone"></i>
+            <a href="tel:+905445582825">+90 544 558 2825</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-primary-700 mt-8 pt-6 text-center">
+      <p>&copy; {{currentYear}} Hüseyin DOL. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

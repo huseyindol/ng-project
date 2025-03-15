@@ -1,6 +1,8 @@
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { RouterLink } from '@angular/router';
+
 interface Country {
 	code: string;
 	name: string;
@@ -8,7 +10,7 @@ interface Country {
 
 @Component({
 	selector: 'app-header',
-	imports: [NgOptimizedImage, ButtonModule, CommonModule],
+	imports: [ButtonModule, CommonModule, RouterLink],
 	templateUrl: './header.component.html',
 	styleUrl: './header.component.css',
 })
@@ -27,8 +29,18 @@ export class HeaderComponent {
 		},
 		{
 			id: 3,
+			name: 'Projects',
+			link: '/projects',
+		},
+		{
+			id: 4,
 			name: 'Blog',
 			link: '/blog',
+		},
+		{
+			id: 5,
+			name: 'Contact',
+			link: '/contact',
 		},
 	];
 	contact = {
