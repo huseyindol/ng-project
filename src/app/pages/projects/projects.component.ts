@@ -1,23 +1,23 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 interface Project {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  technologies: string[];
-  demoUrl?: string;
-  githubUrl?: string;
-  featured: boolean;
+	id: number;
+	title: string;
+	description: string;
+	image: string;
+	technologies: string[];
+	demoUrl?: string;
+	githubUrl?: string;
+	featured: boolean;
 }
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  template: `
+	selector: 'app-projects',
+	standalone: true,
+	imports: [CommonModule, RouterLink],
+	template: `
     <section class="py-16 bg-white dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <h1 class="text-4xl font-bold mb-8 text-center dark:text-white">My Projects</h1>
@@ -120,72 +120,78 @@ interface Project {
       </div>
     </section>
   `,
-  styles: `
+	styles: `
     :host {
       display: block;
     }
-  `
+  `,
 })
 export class ProjectsComponent {
-  projects: Project[] = [
-    {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-featured online shopping platform with payment integration, user authentication, and admin dashboard.',
-      image: 'assets/images/project1.jpg',
-      technologies: ['Angular', 'Node.js', 'MongoDB', 'Express', 'Stripe API'],
-      demoUrl: 'https://ecommerce-demo.huseyindol.com',
-      githubUrl: 'https://github.com/huseyindol/ecommerce-platform',
-      featured: true
-    },
-    {
-      id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, team features, and progress tracking.',
-      image: 'assets/images/project2.jpg',
-      technologies: ['React', 'Firebase', 'Redux', 'Material UI'],
-      demoUrl: 'https://taskmanager.huseyindol.com',
-      githubUrl: 'https://github.com/huseyindol/task-manager',
-      featured: true
-    },
-    {
-      id: 3,
-      title: 'Analytics Dashboard',
-      description: 'A comprehensive analytics dashboard with data visualization, reporting features, and customizable widgets.',
-      image: 'assets/images/project3.jpg',
-      technologies: ['Angular', 'D3.js', 'Express', 'PostgreSQL'],
-      demoUrl: 'https://analytics.huseyindol.com',
-      githubUrl: 'https://github.com/huseyindol/analytics-dashboard',
-      featured: true
-    },
-    {
-      id: 4,
-      title: 'Weather App',
-      description: 'A weather application that provides real-time weather information and forecasts for locations worldwide.',
-      image: 'assets/images/project4.jpg',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'OpenWeather API'],
-      demoUrl: 'https://weather.huseyindol.com',
-      githubUrl: 'https://github.com/huseyindol/weather-app',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'Portfolio Website',
-      description: 'A modern portfolio website built with Angular and Tailwind CSS to showcase projects and skills.',
-      image: 'assets/images/project5.jpg',
-      technologies: ['Angular', 'Tailwind CSS', 'TypeScript'],
-      githubUrl: 'https://github.com/huseyindol/portfolio',
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'Recipe Finder',
-      description: 'A recipe finder application that allows users to search for recipes based on ingredients and dietary preferences.',
-      image: 'assets/images/project6.jpg',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Spoonacular API'],
-      demoUrl: 'https://recipes.huseyindol.com',
-      githubUrl: 'https://github.com/huseyindol/recipe-finder',
-      featured: false
-    }
-  ];
-} 
+	projects: Project[] = [
+		{
+			id: 1,
+			title: 'E-Commerce Platform',
+			description:
+				'A full-featured online shopping platform with payment integration, user authentication, and admin dashboard.',
+			image: 'assets/images/project1.jpg',
+			technologies: ['Angular', 'Node.js', 'MongoDB', 'Express', 'Stripe API'],
+			demoUrl: 'https://ecommerce-demo.huseyindol.site',
+			githubUrl: 'https://github.com/huseyindol/ecommerce-platform',
+			featured: true,
+		},
+		{
+			id: 2,
+			title: 'Task Management App',
+			description:
+				'A collaborative task management application with real-time updates, team features, and progress tracking.',
+			image: 'assets/images/project2.jpg',
+			technologies: ['React', 'Firebase', 'Redux', 'Material UI'],
+			demoUrl: 'https://taskmanager.huseyindol.site',
+			githubUrl: 'https://github.com/huseyindol/task-manager',
+			featured: true,
+		},
+		{
+			id: 3,
+			title: 'Analytics Dashboard',
+			description:
+				'A comprehensive analytics dashboard with data visualization, reporting features, and customizable widgets.',
+			image: 'assets/images/project3.jpg',
+			technologies: ['Angular', 'D3.js', 'Express', 'PostgreSQL'],
+			demoUrl: 'https://analytics.huseyindol.site',
+			githubUrl: 'https://github.com/huseyindol/analytics-dashboard',
+			featured: true,
+		},
+		{
+			id: 4,
+			title: 'Weather App',
+			description:
+				'A weather application that provides real-time weather information and forecasts for locations worldwide.',
+			image: 'assets/images/project4.jpg',
+			technologies: ['JavaScript', 'HTML', 'CSS', 'OpenWeather API'],
+			demoUrl: 'https://weather.huseyindol.site',
+			githubUrl: 'https://github.com/huseyindol/weather-app',
+			featured: false,
+		},
+		{
+			id: 5,
+			title: 'Portfolio Website',
+			description:
+				'A modern portfolio website built with Angular and Tailwind CSS to showcase projects and skills.',
+			image: 'assets/images/project5.jpg',
+			technologies: ['Angular', 'Tailwind CSS', 'TypeScript'],
+			githubUrl: 'https://github.com/huseyindol/portfolio',
+			featured: false,
+		},
+		{
+			id: 6,
+			title: 'Recipe Finder',
+			description:
+				'A recipe finder application that allows users to search for recipes based on ingredients and dietary preferences.',
+			image: 'assets/images/project6.jpg',
+			technologies: ['React', 'Node.js', 'MongoDB', 'Spoonacular API'],
+			demoUrl: 'https://recipes.huseyindol.site',
+			githubUrl: 'https://github.com/huseyindol/recipe-finder',
+			featured: false,
+		},
+	];
+}
