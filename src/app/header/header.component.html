@@ -21,7 +21,8 @@
           <i class="pi pi-linkedin text-xl"></i>
         </a>
       </div>
-      <button (click)="toggleDarkMode()" class="p-2 rounded-full hover:bg-primary-700 transition-colors">
+      <button (click)="toggleDarkMode()"
+        class="size-10 cursor-pointer rounded-full hover:bg-primary-700 transition-colors">
         <i class="pi" [ngClass]="{'pi-moon': !isDarkMode, 'pi-sun': isDarkMode}"></i>
       </button>
     </div>
